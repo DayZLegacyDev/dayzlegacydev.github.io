@@ -51,13 +51,13 @@ const config = {
           editUrl:
             'https://github.com/dayzlegacydev/dayzlegacydev.github.io/tree/master/'
         },
-        // blog: {
-        //   path: 'blog',
-        //   blogSidebarCount: 0,
-        //   showReadingTime: true,
-        //   editUrl:
-        //     'https://github.com/open-goal/open-goal.github.io/tree/master/',
-        // },
+        blog: {
+          path: 'blog',
+          blogSidebarCount: 0,
+          showReadingTime: true,
+          editUrl:
+            'https://github.com/dayzlegacydev/dayzlegacydev.github.io/tree/master/',
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -93,9 +93,9 @@ const config = {
       image: 'img/logo.png',
       metadata: [{ name: 'twitter:card', content: 'summary' }],
       navbar: {
-        title: 'OpenGOAL',
+        title: 'DayZ Legacy',
         logo: {
-          alt: 'OpenGOAL Logo',
+          alt: 'DayZ Legacy Logo',
           src: 'img/logo.png',
         },
         items: [
@@ -106,14 +106,6 @@ const config = {
               {
                 label: 'Major Milestones',
                 to: '/progress/milestones',
-              },
-              {
-                label: 'Jak and Daxter - Decompilation',
-                to: '/progress/jak1',
-              },
-              {
-                label: 'Jak II - Decompilation',
-                to: '/progress/jak2',
               }
             ]
           },
@@ -128,12 +120,12 @@ const config = {
             label: 'Galleries', position: 'left',
             items: [
               {
-                label: 'Jak and Daxter: The Precursor Legacy',
-                to: '/gallery/jak1',
+                label: 'Gameplay Videos',
+                to: '/gallery/videos',
               },
               {
-                label: 'Jak II',
-                to: '/gallery/jak2',
+                label: 'Images',
+                to: '/gallery/images',
               }
             ]
           },
@@ -148,10 +140,11 @@ const config = {
       footer: {
         style: 'dark',
         copyright: `
-        Copyright © ${new Date().getFullYear()} OpenGOAL. Built with Docusaurus.
+        Copyright © ${new Date().getFullYear()} DayZ Legacy. Built with Docusaurus. Almost entirely derived from the 
+        <a href="http://opengoal.dev">OpenGOAL dev layout.</a>
         <br>
         <br>
-        <span class="trademark-disclaimer">All third party trademarks (including but not limited to: logos and icons) referenced by OpenGOAL remain the property of their respective owners. Unless specifically identified as such, OpenGOAL's use of third party trademarks does not indicate any relationship, sponsorship, or endorsment between OpenGOAL and the owners of these trademarks.  Any references to the aforementioned trademarks are for informative purposes and should be considered nominative fair use.</span>`,
+        <span class="trademark-disclaimer">All third party trademarks (including but not limited to: logos and icons) referenced by DayZ Legacy remain the property of their respective owners. Unless specifically identified as such, DayZ Legacy's use of third party trademarks does not indicate any relationship, sponsorship, or endorsment between DayZ Legacy and the owners of these trademarks.  Any references to the aforementioned trademarks as well as the content of this project is for non-commercial, informative purposes and should be considered nominative fair use.</span>`,
       },
       prism: {
         theme: darkCodeTheme,

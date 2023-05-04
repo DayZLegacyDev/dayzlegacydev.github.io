@@ -2,34 +2,14 @@ import React from 'react';
 
 const BlogList = [
   {
-    title: 'Progress Report - Apr. 2023',
-    image: require('@site/blog/progress-report-apr-2023/img/poster.png').default,
+    title: 'Progress Report - May 2023',
+    //image: require('@site/blog/progress-report-apr-2023/img/poster.png').default,
     description: (
       <>
-        Bug fixing for Jak 2 continues and several people are working to improve their areas of interest.
+        Work continues on fixing the 0.62 map and improving the install and update experience.
       </>
     ),
-    link: "/blog/progress-report-apr-2023"
-  },
-  {
-    title: 'Progress Report - Mar. 2023',
-    image: require('@site/blog/progress-report-mar-2023/img/poster.png').default,
-    description: (
-      <>
-        The theme for this month was definitely fixing bugs and that will likely continue for awhile.
-      </>
-    ),
-    link: "/blog/progress-report-mar-2023"
-  },
-  {
-    title: 'Progress Report - Feb. 2023',
-    image: require('@site/blog/progress-report-feb-2023/img/poster.png').default,
-    description: (
-      <>
-        Jak 2 is beginning to really take shape.  Decompilation is finally nearly completion with bug fixing and feature additions starting to ramp up.
-      </>
-    ),
-    link: "/blog/progress-report-feb-2023"
+    link: "/blog/progress-report-may-2023"
   }
 ];
 

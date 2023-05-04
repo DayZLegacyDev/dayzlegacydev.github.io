@@ -8,11 +8,29 @@ import LauncherDownloadLink from '@site/src/components/LauncherDownloadLink';
 
 const FeatureList = [
   {
-    title: 'Performance Overhauls',
+    title: 'Performance Optimizations',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
           Improving both client and server performance through the use of improved rendering and processing techniques is a primary goal for us.
+      </>
+    ),
+  },
+  {
+    title: 'New Content and Features' ,
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+        A major goal of this project is to have a "best-of-both-worlds" between new and old DayZ. Better land, sea, and aerial vehicles. Expanded horticulture. Traders and safezones. New and custom weapons. Persistent loot economy.
+      </>
+    ),
+  },
+  {
+    title: "Relive DayZ's Golden Era",
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+        Never had a chance to play old-school DayZ or want to relive the moment? That's exactly what our project enables players to do.
       </>
     ),
   },
@@ -35,25 +53,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Relive the era of old-school DayZ' ,
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Never had a chance to play old-school DayZ or want to relive the moment? That's exactly what our project enables players to do.
-      </>
-    ),
-  },
-  {
-    title: 'New Additions and Features' ,
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        A major goal of this project is to have a "best-of-both-worlds" between new and old DayZ. Better land, sea, and aerial vehicles. Expanded horticulture. Traders and safezones. New and custom weapons. Persistent loot economy.
-      </>
-    ),
-  },
-  {
-    title: 'Audio and Visual Overhauls' ,
+    title: 'Visual Overhauls' ,
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
