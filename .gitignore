@@ -1,12 +1,17 @@
 # Dependencies
-/node_modules
+node_modules/
 
 # Production
 /build
+/docs/
 
 # Generated files
 .docusaurus
 .cache-loader
+
+# Generated Documentation
+documentation/source-docs/**/*.mdx
+!documentation/source-docs/source-docs/index.mdx
 
 # Misc
 .DS_Store
@@ -18,3 +23,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+jak-project/
+
+/jak1-*.json
+/jak2-*.json
