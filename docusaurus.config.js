@@ -6,18 +6,18 @@ const darkCodeTheme = require('prism-react-renderer/themes/okaidia');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'OpenGOAL',
-  tagline: 'Reviving the Language that Brought us the Jak and Daxter Series',
-  url: 'https://open-goal.github.io',
+  title: 'DayZ Legacy',
+  tagline: 'Reliving the old-school days of DayZ Standalone',
+  url: 'https://dayzlegacydev.github.io',
   baseUrl: '/',
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'open-goal', // Usually your GitHub org/user name.
-  projectName: 'open-goal.github.io', // Usually your repo name.
+  organizationName: 'dayzlegacydev', // Usually your GitHub org/user name.
+  projectName: 'dayzlegacydev.github.io', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -49,15 +49,15 @@ const config = {
           path: "docs",
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/open-goal/open-goal.github.io/tree/master/'
+            'https://github.com/dayzlegacydev/dayzlegacydev.github.io/tree/master/'
         },
-        blog: {
-          path: 'blog',
-          blogSidebarCount: 0,
-          showReadingTime: true,
-          editUrl:
-            'https://github.com/open-goal/open-goal.github.io/tree/master/',
-        },
+        // blog: {
+        //   path: 'blog',
+        //   blogSidebarCount: 0,
+        //   showReadingTime: true,
+        //   editUrl:
+        //     'https://github.com/open-goal/open-goal.github.io/tree/master/',
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -69,14 +69,14 @@ const config = {
     ({
       announcementBar: {
         id: 'announcementBar-2', // Increment on change
-        content: `<a href="/blog/progress-report-apr-2023">Check out April's Progress Report Here!</a>`,
+        content: `<a> Placeholder! </a>`,
       },
       algolia: {
         // The application ID provided by Algolia
         appId: 'YAP33BKRCA',
         // Public API key: it is safe to commit it
         apiKey: '7d68c3181a134366b669225073fed1cb',
-        indexName: 'open-goal',
+        indexName: 'dayzlegacydev',
         // Optional: see doc section below
         contextualSearch: true,
         // Optional: Algolia search parameters
@@ -138,7 +138,7 @@ const config = {
             ]
           },
           {
-            href: 'https://github.com/open-goal',
+            href: 'https://github.com/dayzlegacydev',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository',
