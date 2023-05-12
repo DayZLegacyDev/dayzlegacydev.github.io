@@ -2,11 +2,11 @@ import React from 'react';
 
 const BlogList = [
   {
-    title: 'Progress Report - May 2023',
-    //image: require('@site/blog/progress-report-apr-2023/img/poster.png').default,
+    title: 'State of the Project - May 2023',
+    image: require('@site/blog/progress-report-may-2023/img/poster.png').default,
     description: (
       <>
-        Work continues on fixing the 0.62 map and improving the install and update experience.
+        An important notice about the future of DayZ Legacy.
       </>
     ),
     link: "/blog/progress-report-may-2023"

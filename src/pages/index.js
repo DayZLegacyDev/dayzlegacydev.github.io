@@ -56,10 +56,10 @@ function HomepageHeader() {
               </div>
             </div>
           </div>
-          { <div className="col col--4">
+          {/* { <div className="col col--4">
             <LauncherDownloadLink />
             <a href={"/docs/usage/installation"}>Issues installing?</a>
-          </div> }
+          </div> } */}
         </div>
       </div>
     </header>
@@ -103,12 +103,12 @@ export default function Home() {
               <div className="col col--6">
                 <h2 className="monospaced">Stay in Touch</h2>
                 <p>DayZ Legacy is constantly growing and evolving. Check out our progress page for more info.</p>
-                <a href="/progress/milestones">Check it Out</a>
+                <a href="">Coming soon</a>
               </div>
               <div className="col col--6">
                 <h2 className="monospaced">Read the Docs</h2>
                 <p>If you are interested in assisting in developing, check out the docs here, as well as the documentation in the GitHub repo itself.</p>
-                <a href="/docs/intro">Reference Docs</a>
+                <a href="">Coming soon</a>
               </div>
             </div>
           </div>

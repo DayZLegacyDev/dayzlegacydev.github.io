@@ -100,35 +100,35 @@ const config = {
         },
         items: [
           { to: 'blog', label: 'Blog', position: 'left' },
-          {
-            to: '/progress/milestones', label: 'Progress', position: 'left',
-            items: [
-              {
-                label: 'Major Milestones',
-                to: '/progress/milestones',
-              }
-            ]
-          },
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Documentation',
-          },
-          { to: '/docs/faq', label: 'FAQ', position: 'left' },
-          {
-            label: 'Galleries', position: 'left',
-            items: [
-              {
-                label: 'Gameplay Videos',
-                to: '/gallery/videos',
-              },
-              {
-                label: 'Images',
-                to: '/gallery/images',
-              }
-            ]
-          },
+          // {
+          //   to: '/progress/milestones', label: 'Progress', position: 'left',
+          //   items: [
+          //     {
+          //       label: 'Major Milestones',
+          //       to: '/progress/milestones',
+          //     }
+          //   ]
+          // },
+          // {
+          //   type: 'doc',
+          //   docId: 'intro',
+          //   position: 'left',
+          //   label: 'Documentation',
+          // },
+          // { to: '/docs/faq', label: 'FAQ', position: 'left' },
+          // {
+          //   label: 'Galleries', position: 'left',
+          //   items: [
+          //     {
+          //       label: 'Gameplay Videos',
+          //       to: '/gallery/videos',
+          //     },
+          //     {
+          //       label: 'Images',
+          //       to: '/gallery/images',
+          //     }
+          //   ]
+          // },
           {
             href: 'https://github.com/dayzlegacydev',
             position: 'right',
