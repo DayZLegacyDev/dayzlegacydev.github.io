@@ -140,7 +140,7 @@ const config = {
       footer: {
         style: 'dark',
         copyright: `
-        Copyright © ${new Date().getFullYear()} DayZ Legacy. Built with Docusaurus. Almost entirely derived from the 
+        Copyright © ${new Date().getFullYear()} DayZ Legacy Team. Built with Docusaurus. Almost entirely derived from the 
         <a href="http://opengoal.dev">OpenGOAL dev layout.</a>
         <br>
         <br>
