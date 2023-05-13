@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/okaidia');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'DayZ Legacy',
-  tagline: 'Reliving the old-school days of DayZ Standalone',
+  tagline: 'Classic DayZ Standalone, renewed for modern times.',
   url: 'https://dayzlegacydev.github.io',
   baseUrl: '/',
   onBrokenLinks: 'warn',
