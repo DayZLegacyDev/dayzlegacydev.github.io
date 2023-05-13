@@ -8,8 +8,8 @@ import LauncherDownloadLink from '@site/src/components/LauncherDownloadLink';
 
 const FeatureList = [
   {
-    title: 'Performance Optimizations',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Performance overhauls',
+    Svg: require('@site/static/img/undraw_performance_overview_re_mqrq.svg').default,
     description: (
       <>
           Improving both client and server performance through the use of improved rendering and processing techniques is a primary goal for us.
@@ -17,47 +17,47 @@ const FeatureList = [
     ),
   },
   {
-    title: 'New Content and Features' ,
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Combining legacy and innovation' ,
+    Svg: require('@site/static/img/undraw_goals_re_lu76.svg').default,
     description: (
       <>
-        A major goal of this project is to have a "best-of-both-worlds" between new and old DayZ. Better land, sea, and aerial vehicles. Expanded horticulture. Traders and safezones. New and custom weapons. Persistent loot economy.
+        The best of both worlds between new and old DayZ. Better land, sea, and aerial vehicles. Expanded horticulture. Traders and safezones. New and custom weapons. Persistent loot economy.
       </>
     ),
   },
   {
-    title: "Relive DayZ's Golden Era",
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Journey to the past',
+    Svg: require('@site/static/img/undraw_adventure_re_ncqp.svg').default,
     description: (
       <>
-        Never had a chance to play old-school DayZ or want to relive the moment? That's exactly what our project enables players to do.
+        Never had a chance to play old-school DayZ or want to relive the moment? That's exactly what our project enables players to do. You must own the game on Steam to play.
       </>
     ),
   },
   {
-    title: 'Quality of Life Fixes',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Modern comforts and enhancements',
+    Svg: require('@site/static/img/undraw_design_components_9vy6.svg').default,
     description: (
       <>
-        DayZ Legacy is built with the intention of delivering critical quality of life fixes to resolve some of the most pressing issues in these older game versions.
+        DayZ Legacy is built with the intention of delivering critical quality of life fixes to resolve some of the most pressing issues in this older game version.
       </>
     ),
   },
   {
-    title: 'Custom Anti-Cheat' ,
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Keeping it fair' ,
+    Svg: require('@site/static/img/undraw_true_love_cy8x.svg').default,
     description: (
       <>
-        Our Helix anti-cheat proactively monitors our servers for modified or malicious activity.
+        Our Helix anti-cheat proactively monitors our servers for modified or malicious activity. Patches for vulnerabilties and issues like duping.
       </>
     ),
   },
   {
-    title: 'Visual Overhauls' ,
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'New coat of paint' ,
+    Svg: require('@site/static/img/undraw_art_museum_-8-or4.svg').default,
     description: (
       <>
-        Some of our currently implemented visual changes include a DirectX 11 and Vulkan build (DX12 TBA!), water caustics and refractions, FXAA edge smoothing, and improved Alpha to Coverage/Render to Texture properties. We have plans to integrate new visual effects like HDAO+, and re-integrate old ones like SSAO and volumetric clouds.
+        Some of our currently implemented visual changes include water caustics and refractions, FXAA edge smoothing, and improved Alpha to Coverage/Render to Texture properties. We have plans to integrate new visual effects like HDAO+, and re-integrate old ones like SSAO and volumetric clouds.
       </>
     ),
   },

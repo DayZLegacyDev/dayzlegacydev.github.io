@@ -67,10 +67,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // announcementBar: {
-      //   id: 'announcementBar-2', // Increment on change
-      //   content: `<a> Placeholder! </a>`,
-      // },
+      announcementBar: {
+        id: 'announcementBar', // Increment on change
+        content: 'Important project update available <a href="https://dayzlegacy.dev/blog/progress-report-may-2023/">here.</a>',
+      },
       algolia: {
         // The application ID provided by Algolia
         appId: 'YAP33BKRCA',
