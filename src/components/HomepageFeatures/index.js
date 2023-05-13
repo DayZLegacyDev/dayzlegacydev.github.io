@@ -57,7 +57,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_art_museum_-8-or4.svg').default,
     description: (
       <>
-        Some of our currently implemented visual changes include water caustics and refractions, FXAA edge smoothing, and improved Alpha to Coverage/Render to Texture properties. We have plans to integrate new visual effects like HDAO+, and re-integrate old ones like SSAO and volumetric clouds.
+        Some of our currently implemented visual changes include water caustics and refractions, FXAA edge smoothing, and improved Alpha to Coverage/Render to Texture properties. We have plans to integrate new visual effects like HDAO, and re-integrate old ones like SSAO and volumetric clouds.
       </>
     ),
   },
