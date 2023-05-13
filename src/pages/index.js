@@ -8,7 +8,7 @@ import LauncherDownloadLink from '@site/src/components/LauncherDownloadLink';
 
 function HomepageHeader() {
   let textToType = `diag_log format ["%1", site-config-tagline]`;
-  let colorizedText = `<span class="hero-constant-color">diag_log</span> <span class="hero-constant-color">format</span><span class="hero-bracket-color">[</span><span class="hero-string-color">"tag-line: %1", </span><span class = "hero-identifier-color">site-config-tagline</span><span class="hero-bracket-color">]</span><span class = "hero-constant-color">;</span>`;
+  let colorizedText = `<span class="hero-constant-color">diag_log</span> <span class="hero-constant-color">format</span><span class="hero-bracket-color">[</span><span class="hero-string-color">"%1", </span><span class = "hero-identifier-color">site-config-tagline</span><span class="hero-bracket-color">]</span><span class = "hero-constant-color">;</span>`;
   const [textFinishedTyping, setTextFinishedTyping] = useState(false);
   const [currText, setCurrText] = useState("");
   let interval;
