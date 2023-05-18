@@ -12,7 +12,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_performance_overview_re_mqrq.svg').default,
     description: (
       <>
-          Improving both client and server performance is a primary goal so that we can support more complex content such as base building, AI missions, and other new gameplay interactions. 
+          Overhauling performance of both the client and server is a primary goal for us
       </>
     ),
   },
@@ -21,7 +21,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_goals_re_lu76.svg').default,
     description: (
       <>
-        The best of both worlds between new and old DayZ. Better land, sea, and aerial vehicles. Expanded horticulture. Traders and safezones. New and custom weapons. Persistent loot economy.
+        The best of both worlds between new and old DayZ
       </>
     ),
   },
@@ -30,7 +30,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_adventure_re_ncqp.svg').default,
     description: (
       <>
-        Never had a chance to play old-school DayZ or want to relive the moment? That's exactly what our project enables players to do. 
+        Never had a chance to play old-school DayZ or want to relive the moment? That's exactly what our project enables players to do
       </>
     ),
   },
@@ -39,7 +39,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_design_components_9vy6.svg').default,
     description: (
       <>
-        DayZ Legacy is built with the intention of delivering critical quality of life fixes and features to resolve some of the issues that exist in this older game version.
+        Critical quality-of-life features and fixes which improve the look and feel
       </>
     ),
   },
@@ -48,7 +48,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_true_love_cy8x.svg').default,
     description: (
       <>
-        Preserving game integrity is a massive priority. We will never accept donations of any kind or provide monetized content. Custom anti-cheat protections are enabled and you must own the game on Steam to play.
+        We will never accept donations of any kind or provide monetized content. Custom anti-cheat protections are enabled and you must own the game on Steam to play
       </>
     ),
   },
@@ -57,7 +57,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_art_museum_-8-or4.svg').default,
     description: (
       <>
-        Explore locations old and new on our upgraded Chernarus map. Improved visual fidelity while maintaining the classic DayZ look and feel. Enhanced immersion and realism.
+        Explore locations old and new on our upgraded Chernarus map. Improved visual fidelity while maintaining the classic DayZ look and feel
       </>
     ),
   },
