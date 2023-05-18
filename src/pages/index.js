@@ -84,11 +84,11 @@ export default function Home() {
                 <p>The project officially started back in 2021 and has continued to grow in scale and complexity.</p>
                 <p>At a high level, our strategy is as follows:</p>
                 <ul>
-                  <li>re-create and backport a variety of features from the current version of DayZ</li>
+                  <li>re-create a variety of features from the current version of DayZ</li>
                   <li>fix several critical issues and vulnerabilities in the game through Helix, our custom anti-cheat solution</li>
-                  <li>develop new tools and workflows for creating, packing, and implementing new gameplay data</li>
-                  <li>remove bloat and optimize client performance</li>
-                  <li>retain existing engine functionality without relying on new systems (Enfusion animation, script, sound system)</li>
+                  <li>develop new tools and workflows for creating, packing, and implementing gameplay data</li>
+                  <li>remove bloat and optimize client and server performance</li>
+                  <li>retain legacy (pre-alpha 2013-2016) engine functionality and visuals</li>
                 </ul>
               </div>
               <div className="col col--8">
@@ -103,11 +103,6 @@ export default function Home() {
               <div className="col col--6">
                 <h2 className="monospaced">Stay in Touch</h2>
                 <p>DayZ Legacy is constantly growing and evolving. Check out our progress page for more info.</p>
-                <a href="">Coming soon</a>
-              </div>
-              <div className="col col--6">
-                <h2 className="monospaced">Read the Docs</h2>
-                <p>If you are interested in assisting in developing, check out the docs here, as well as the documentation in the GitHub repo itself.</p>
                 <a href="">Coming soon</a>
               </div>
             </div>
