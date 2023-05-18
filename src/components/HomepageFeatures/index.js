@@ -12,7 +12,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_performance_overview_re_mqrq.svg').default,
     description: (
       <>
-          Improving both client and server performance through the use of improved rendering and processing techniques is a primary goal for us.
+          Improving both client and server performance is a primary goal so that we can support more complex content such as base building, AI missions, and other new gameplay interactions. 
       </>
     ),
   },
@@ -30,7 +30,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_adventure_re_ncqp.svg').default,
     description: (
       <>
-        Never had a chance to play old-school DayZ or want to relive the moment? That's exactly what our project enables players to do. You must own the game on Steam to play.
+        Never had a chance to play old-school DayZ or want to relive the moment? That's exactly what our project enables players to do. 
       </>
     ),
   },
@@ -39,7 +39,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_design_components_9vy6.svg').default,
     description: (
       <>
-        DayZ Legacy is built with the intention of delivering critical quality of life fixes to resolve some of the most pressing issues in this older game version.
+        DayZ Legacy is built with the intention of delivering critical quality of life fixes and features to resolve some of the issues that exist in this older game version.
       </>
     ),
   },
@@ -48,7 +48,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_true_love_cy8x.svg').default,
     description: (
       <>
-        Our Helix anti-cheat proactively monitors our servers for modified or malicious activity. Patches for vulnerabilties and issues like duping.
+        Preserving game integrity is a massive priority. We will never accept donations of any kind or provide monetized content. Custom anti-cheat protections are enabled and you must own the game on Steam to play.
       </>
     ),
   },
@@ -57,7 +57,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_art_museum_-8-or4.svg').default,
     description: (
       <>
-        Some of our currently implemented visual changes include water caustics and refractions, FXAA edge smoothing, and improved Alpha to Coverage/Render to Texture properties. We have plans to integrate new visual effects like HDAO, and re-integrate old ones like SSAO and volumetric clouds.
+        Explore locations old and new on our upgraded Chernarus map. Improved visual fidelity while maintaining the classic DayZ look and feel. Enhanced immersion and realism.
       </>
     ),
   },
