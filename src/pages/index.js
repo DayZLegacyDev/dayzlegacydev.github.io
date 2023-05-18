@@ -88,7 +88,7 @@ export default function Home() {
                   <li>fix several critical issues and vulnerabilities in the game through Helix, our custom anti-cheat solution</li>
                   <li>develop new tools and workflows for creating, packing, and implementing gameplay data</li>
                   <li>remove bloat and optimize client and server performance</li>
-                  <li>retain legacy (pre-alpha 2013-2016) engine functionality and visuals</li>
+                  <li>retain legacy (pre-alpha) engine functionality and visuals</li>
                 </ul>
               </div>
               <div className="col col--8">
