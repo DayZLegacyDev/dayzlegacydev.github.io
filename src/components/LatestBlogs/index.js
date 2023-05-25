@@ -2,6 +2,16 @@ import React from 'react';
 
 const BlogList = [
   {
+    title: 'Progress Report - June 2023',
+    image: require('@site/blog/progress-report-june-2023/img/poster.png').default,
+    description: (
+      <>
+        Work continues on increasing quality-of-life and resolving some of the most frustrating issues in DayZ Legacy.
+      </>
+    ),
+    link: "/blog/progress-report-june-2023"
+  },
+  {
     title: 'State of the Project - May 2023',
     image: require('@site/blog/progress-report-may-2023/img/poster.png').default,
     description: (
@@ -11,6 +21,7 @@ const BlogList = [
     ),
     link: "/blog/progress-report-may-2023"
   }
+  
 ];
 
 function BlogPost({ image, title, description, link }) {
