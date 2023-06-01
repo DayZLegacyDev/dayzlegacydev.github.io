@@ -1,7 +1,7 @@
 ---
 title: Progress Report - June 2023
 date: 2023-05-25T10:00
-description: June 2023's DayZ Legacy Progress Report
+description: DayZ Legacy Progress Report - June 2023
 slug: progress-report-june-2023
 authors:
   - doctorweed
@@ -30,12 +30,12 @@ This month's DayZ Legacy release is `0.68.69420`.
 </div>
 
 :::danger
-NOTE - You must be using the latest launcher version to download the new update and communicate with the server.
+NOTE - You must be using the latest launcher version to download and play this new update.
 :::
 
 ## Highlights
 
-### Massive launcher improvements 
+### Massive launcher overhaul 
 
 Our launcher has been overhauled in several significant ways:
 - You can now pre-select your preferred game settings and save them - this allows you to choose between x86-64, DX9/DX11, etc.
@@ -48,40 +48,31 @@ If you've been having issues setting launch parameters, determining which execut
 
 Our Discord now has a #server-status channel which provides real-time status updates for all 3 DayZ Legacy servers.
 
-Long story short, I have three separate machines that I use to host the server. Sometimes one machine needs to be used instead of the other. 
-
 The game client knows the address of all 3 servers and will show whichever one is currently active, but if you run into issues seeing the server, you can always verify by checking this new channel.
+
+Most of the time we will have at least one online.
 
 ### Damage processing overhauls
 
 We're finally starting to implement damage on a caliber-specific level and including armor and insulation values into the total damage value.
 
-This is coupled with a new event handler for shock which aims to be a little bit more realistic and make combat more interesting.
+This is coupled with a new event handler for shock which aims to be a little bit more realistic and make combat more interesting. Getting shot or mobbed by zombies is painful and the player should feel that pain more than they do now. Eventually, adding things like viewport vignetting with higher shock values and injured states will be added to this system.
 
-Getting shot or mobbed by zombies is painful and the player should feel that pain more than they do now.
-
-Eventually, adding things like viewport vignetting with higher shock values and injured states will be added to this system.
-
-The end goal here is to prevent the character from tanking .308 rounds to the chest unless they have top-tier armor.
-
-We're really aiming for an experience similiar to modded DayZ Standalone servers like Rearmed, with several tiers of chest and head armor.
+The end goal here is to prevent the character from tanking .308 rounds to the chest unless they have top-tier armor. We're really aiming for an experience similiar to modded DayZ Standalone servers like Rearmed, with several tiers of chest and head armor.
 
 More advanced medical interventions also become possible with this new system, including things like tourniquets to prevent bleeding for a set amount of time, IFAKs to instantly restore health, ALU splints, and Golden Stars to prevent shock pass-out from a broken limb.
 
 ### Vehicle Aimspaces 
 
-Starting with the UH1H helicopter variants, an additional player will be able to enter the helicopter as a gunner.
-This attaches the player outside of the vehicle while allowing them to retain their ability to shoot.
+Starting with the UH1H helicopter variants, an additional player will be able to enter the helicopter as a gunner. This attaches the player outside of the vehicle while allowing them to retain their ability to shoot.
 
-Makes for some fun interactions in both PVE and PVP.
+Makes for some fun interactions in both PVE and PVP. This system is far from perfect so definitely leave some feedback if you give it a try! 
 
-This system is far from perfect so definitely leave some feedback if you give it a try! 
+[need picture]
 
 ### Vulkan client revisions
 
-This increases quality-of life and solves some issues:
-- Only one executable needed for DirectX 9 and Vulkan builds
-- Use `-vulkan` launch parameter to boot into Vulkan mode 
+We've increased performance, quality-of-life, and reduced the overall download size with these latest round of Vulkan fixes. 
 
 <ImageCompare left={require("./img/sculptor-before.png").default} right={require("./img/sculptor-after.png").default}/>
 
