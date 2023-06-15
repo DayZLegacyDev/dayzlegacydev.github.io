@@ -56,10 +56,10 @@ function HomepageHeader() {
               </div>
             </div>
           </div>
-          {/* { <div className="col col--4">
+          { <div className="col col--4">
             <LauncherDownloadLink />
             <a href={"/docs/usage/installation"}>Issues installing?</a>
-          </div> } */}
+          </div> }
         </div>
       </div>
     </header>
