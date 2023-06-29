@@ -1,6 +1,6 @@
 ---
 title: Progress Report - June 2023
-date: 2023-05-25T10:00
+date: 2023-06-28T10:00
 description: DayZ Legacy Progress Report - June 2023
 slug: progress-report-june-2023
 authors:
@@ -15,7 +15,7 @@ draft: true
   <meta name="twitter:card" content="summary_large_image" />
 </head>
 
-The project relaunches with a fresh coat of paint, new community resources, and many quality-of-life fixes.
+The project relaunches with a fresh coat of paint, new community resources, and many crash fixes and stability improvements. 
 
 <!--truncate-->
 
@@ -45,22 +45,20 @@ Our launcher has been overhauled in several significant ways:
 
 If you've been having issues setting launch parameters, determining which executable to use, or sending debug logs to us, the new launcher will help you a lot.
 
-We're still monitoring some ongoing issues with the launcher, including inaccurate progress bars, UI issues, Steam authentication errors, and more, so be patient with us and continue to report any bugs you may run into.
+We're still fixing some issues with the launcher, including inaccurate progress bars, UI issues, Steam authentication errors, and more, so be patient with us and continue to report any bugs you may run into.
 
-The game will not start anymore unless it is run through the launcher, so please remember to use it from now on.
+The game will not start anymore unless it is run through the launcher so remember to use it from now on.
 
 A more detailed readme for the launcher is available [here.](https://github.com/DayZLegacyDev/DayZ-Legacy-Launcher)
-
-Over time, we want to more closely integrate the launcher experience with the game, including allowing the user to pick things like their preferred monitor and even graphical settings like MSAA/texture quality. 
 
 ![New launcher](./img/Launcher1.png)
 ![New launcher](./img/Launcher2.png)
 
 ### Server status bot
 
-Our Discord now has a #server-status channel which provides real-time status updates for all 3 DayZ Legacy servers.
+Our Discord now has a #server-status channel which provides real-time status updates for the servers we have available.
 
-The game client knows the address of all 3 servers and will show whichever one is currently active, but if you run into issues seeing the server, you can always verify by checking this new channel.
+The game client knows the address of every server and will show whichever one is currently active, but if you run into issues seeing the server, you can always verify by checking this new channel.
 
 Most of the time we will have at least one online.
 
@@ -77,7 +75,7 @@ Makes for some fun interactions in both PVE and PVP.
 
 Our first implementation is more focused on getting the tech working smoothly and making sure the server can handle transporting other characters outside of the vehicle. This can sort of be an intense operation so some desync is to be expected.
 
-Proper character alignment and gunner poses will come later on. 
+Proper character alignment and gunner poses will come later on. It'll look kind of weird for now but definitely report bugs if you run into them.
 
 ![Vehicle Gunner](./img/GunnerPos.png)
 
@@ -95,8 +93,6 @@ We want to update this over time to keep track of things like killed zombies/pla
 ### Vulkan client revisions
 
 We've increased performance and quality-of-life while reducing the overall download size in this latest round of Vulkan fixes.
-
-<ImageCompare left={require("./img/vulkan-before.png").default} right={require("./img/vulkan-after.png").default}/>
 
 ### Status HUD improvements
 
@@ -134,10 +130,6 @@ This mode will put the player at an inherent disadvantage due to reduced visibil
 
 Your in-game UID is now determined by your STEAM64 ID, which allows us to better track bans and make them more permanent.
 
-We have a trust factor system we've established based on a number of different criteria.
-
-Another reminder that we're committed to preserving integrity in the game and we won't tolerate cheaters. 
-
 ### Loot spawning improvements
 Some changes have been made to the world loot processing system which are meant to have the following effect:
 - Create a better diversity of weapons, food, and high-tier gear 
@@ -155,7 +147,7 @@ If you've ever encountered an "Out of Memory" error while playing, this update s
 
 A good majority of the crashes we currently experience in game are related to how the engine processes and loads shapes, particularly within the level-of-detail system.
 
-We've made some improvements to how the scene is rendered and early testing shows good results. Since our fix is intended to address the issue at the root cause rather than a "band-aid", it has the benefit of both increasing performance and reducing crash frequency.
+We've made some improvements to how the scene is rendered and a lot of the crashes have disappeared.
 
 ### Improved crash handling 
 
@@ -167,14 +159,10 @@ Eventually, we want to have this window show any time the game crashes or exits 
 
 Once the window appears, you'll be given some additional info such as the exit code, and given the option to create a new bug report directly through the Discord.
 
-The client will still experience crashing and instability so we think this is a good way to get ahead of that and to make the experience a bit less frustrating. 
-
-
-
-
 ### Other changes
 
 We've addressed some ongoing issues with server performance and we think that we've dialed it into a more acceptable range. 
 
 This should hopefully reduce instances of "frozen" character interactions e.g. getting stuck eating/drinking, or other symptoms like lagging zombies/players.
 
+That's all for now. Moving forward, I want to try and have a new progress report out on a monthly basis.
