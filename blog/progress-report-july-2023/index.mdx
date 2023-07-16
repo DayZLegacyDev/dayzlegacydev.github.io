@@ -1,0 +1,207 @@
+---
+title: Progress Report - July 2023
+date: 2023-07-28T10:00
+description: DayZ Legacy Progress Report - July 2023
+slug: progress-report-july-2023
+authors:
+  - doctorweed
+tags: [progress-report]
+image: ./img/poster.png
+hide_table_of_contents: false
+draft: false
+---
+
+<head>
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+
+Making good headway on new content additions and bug fixes/behavior reworks for many major systems.
+
+<!--truncate-->
+
+## Release Info
+
+This month's DayZ Legacy release is `0.69.00400`.
+
+<div className="row markdownMarginBottom">
+  <div className="col col--6">
+    <LauncherDownloadLink />
+  </div>
+</div>
+
+:::danger
+tbd
+:::
+
+## Highlights
+
+### New Bandit AI Implementation 
+This is by far the biggest component of this update and one that I'm really excited to push out live.
+
+We've implemented a new engine-based AI system for bandits that is much more robust and allows us to do a lot more with them in the future.
+
+The new system is based on a behavior tree, which is a way of organizing AI logic into a tree-like structure. This behavior model is very closely related to how zombie behavior is processed.
+
+Our old Bandit AI system was very limited due to being implemented entirely in SQF (no, seriously)...
+
+Now that we are performing target aiming and movement calculations directly in the engine, we have a lot more overhead to work with and can do things like:
+
+- Create "military", "civilian", and "aerial" patrols with different behaviors and gear-sets 
+- Simulate up to 40 of these patrols across the map with good performance 
+- Dynamically spawn and despawn patrols over the server's lifetime 
+- Give bandits the ability to use vehicles 
+- Have the bandits follow static or dynamic paths (exploring towns, guarding helicrashes etc)
+- Have bandits react to player actions (shooting, driving)
+
+Right now, for this update, we've enabled a total of 40 patrols across the server's lifetime. This means they don't all spawn at once, but rather spawn and despawn over time based on counts we can set.
+
+10 of these patrols are "military", meaning they will be heavily armed and guarding high-tier loot areas. 20 are "civilian", meaning they will have lower-tier gear and patrol around cities and small towns. 10 are "aerial", meaning they will be in the air for a fixed fly time before crashing.
+
+This system is going to be prone to a BUNCH of weird behavior and bugs, so please report anything you see that looks off (movement, interaction, balance issues, etc)
+
+The only way we can continue to improve this mechanic is by testing and receiving continuous feedback.
+
+Make sure to look over your shoulder before charging into that barracks...
+
+### World Persistence and Hive Fixes
+With this update we are finally enabling world persistence for more object types and certain types of character data. 
+
+- Tents that the user places will now be persistent across restarts. Items inside the tent, including their quantities and any attached items will be saved and available.
+- Items that the user drops on the ground will now more reliably save, and their contents and attachments will also be saved. 
+- Items in the character's inventory with a "power" or "food_stage" modifier will now be saved properly.
+- Character's money will now be saved properly.
+
+We're setting a default lifetime of 2 weeks for all saved objects. This means that if you don't interact with an object for 2 weeks, it will be deleted from the database.
+
+You can have up to two tents in the world.
+
+Aside from the brand new persistence functionality, we're also pushing a series of fixes to the hive which SHOULD reduce the frequency in which characters are being randomly reset. 
+
+We'll be monitoring the hive for any issues with this system and will make adjustments to item lifetimes etc as needed.
+
+At the moment, tents cannot be locked, so make sure they are well hidden, or somebody may come along and take your stuff! 
+
+### New Video Options Menu 
+We've significantly overhauled the video options menu and added support for a few new options. 
+
+The four new video categories are:
+- Rendering
+- Quality 
+- Lighting 
+- User Interface 
+
+You can now directly configure these settings in game: 
+
+- Picture in Picture (basically just textures inside of other textures as a reflection effect)
+- Water caustics (the effect of light passing through water)
+- Particle effects (things like smoke, fire, and explosions)
+- Light source count
+- Display Mode (new support for borderless fullscreen and exclusive fullscreen modes)
+- Output Monitor (useful for those with multiple monitors)
+
+We're still going to be adding new graphical effects in the future, so this list will be expanded over time. 
+
+### More damage improvements 
+
+We've changed the way that shock values are applied across the board and we think this gives a much better experience and challenge overall. Many damage sources were configured with very low or no shock damage assessment, which meant that players could take a lot of damage without any real impact to their character. 
+
+As part of the changes we've made, you will see a lot more shock damage being applied to your character with almost every damage source. This means that you will be more likely to pass out from taking damage, which is a good thing. This mechanic makes zombies much more dangerous than they currently are, so be careful when engaging them in melee combat.
+
+This new application of shock damage also applies to vehicles, so getting into a car crash will almost surely knock the player out.
+
+Our handling of the unconscious state has been tweaked pretty significantly as well so that you will wake up much quicker than before, in most cases, under two minutes. You will wake up significantly slower if you have broken bones, are bleeding, etc, so keep this in mind. 
+
+This mimics the behavior of the current version of Standalone and we think it's a good balance between the old system and the new system.
+
+
+### Improved Vehicle Experience 
+As mentioned earlier, we've added some damage processing for vehicles, so you'll now go unconscious if you crash into something. Eventually we'll expand upon this so that some value of damage is applied to the player as well (maybe a fractured leg or other status effect) 
+
+While behind the scenes, we're full speed ahead on having a comprehensive damage and repair system for vehicles, we're not at a point where it makes sense to enable true damage yet, so we're keeping them indestructible for now. However, we have made some other quality-of-life improvements to how vehicles are handled in the world.
+
+We've restored synchronization of the headlight state between the server and client, so now you can turn headlights off/on with the L key. Night drivers rejoice!
+
+Vehicles now must have fuel to start, and they will consume fuel as they are driven. The fuel consumption rate is based on the vehicle's speed, so driving at high speeds will consume fuel much faster than driving at low speeds. Previously, vehicles did consume fuel, but stopping the vehicle would automatically refuel it. This is no longer the case, so you'll need to find a gas station or a jerry can to refuel your vehicle once it's empty. We've increased the frequency in which gas cans spawn and made sure they can be fully filled up at any gas pump. 
+
+We've massively improved the experience for getting out of helicopters. Previously, you would be ejected from the helicopter which is a death sentence. Now, you will be able to exit the helicopter and parachute to the ground. Right now, the parachute cannot be steered (coming soon!). You can only open your parachute if you are above 50m in the air, so make sure you're not too close to the ground when you exit the helicopter.
+
+The action name changes from "Eject (Freefall)" to "Eject (Parachute)" when you are above 50m.
+
+The nasty parachute animation (and all other vehicle animations) are a limitation of using old Arma animations with the new DayZ skeleton. We might be able to fix this, but at the moment it is what it is and we have our priorities elsewhere. 
+
+Finally, we've forced destruction states to be synchronized from client to server. If a car or helicopter is completely destroyed, it's destroyed for every client. Right now, the only vehicles that are being destroyed are helicopters or planes when crashed at high speed, or when any vehicle enters water.
+
+This resolves a bug that allowed networked players to get into destroyed vehicles and drive/fly them around.
+
+We're making all of these changes now to gear up for vehicle persistence and ownership, which should be coming around in the next couple of months. 
+
+### World and accelerated time improvements 
+Welcome to night-time Chernarus! We're testing some improvements to accelerated time and as such, have set the default server time to dusk. 
+
+To date, we have not been using accelerated time at all, so this is a big step forward for us. A number of reasons we're choosing to make this change now:
+
+- Our modfiied time acceleration system will actually make nights shorter than days, so for those who don't like nighttime, we can make this pretty inconsequential (20 minute night vs 4 hour day etc) 
+- We want players to be using light sources! Not only will this give us helpful performance insights, but we also need to gather some feedback on the overall quality of the lighting system, especially point lights (things like flashlights)
+- We've made some other supporting changes elsewhere to make this transition easier (cars can now use headlights, players spawn with a flashlight, etc) 
+
+This system might cause some issues with weather palettes or in other ways we're not aware of yet, so please report issues if you notice them.
+
+### Trader overhaul 
+We've pushed a bunch of bug fixes to traders and safezones, and what better way to test them out with an overhauled safe zone?
+
+The new safezone is located near Solnichiny (marked on your map!) and features a new trader layout. We've modified the safezone event handler to be more robust and reliable, so you should no longer see issues with the safezone not being active when it should be. We've also stopped zombies and AI from being able to enter the safezone, so you should be safe from them while you're there. They despawn so you won't see them hanging around the edges of the safezone.
+
+We've fixed several weird issues with the way traders behave, including their clothing and positions, so you should see a much more consistent experience when interacting with them.
+
+This set of fixes also includes a complete rework of the trader price list, so you'll see a lot more items available for purchase, and at prices that are more in line with our economy. We're still working on the "Sell" trader functionality, so for now, you can only buy items from the trader.
+
+### Sound Improvements 
+We've fixed a BUNCH of sounds that weren't firing for one reason or another! Idle zombie groans, splitting ammo, ocean waves, distant gunshots, and animal calls should all be audible now!
+
+This was one issue that never really bothered me until it got fixed, and now I can't imagine playing without them. 
+
+### Volumetric clouds for x64 
+We've finished porting volumetric clouds to 64-bit builds, which improves visual quality and brings both the 32-bit and 64-bit DirectX 9 clients in parity with each other.
+
+Next up is support for DirectX 11, which will probably come out with next month's update. 
+
+
+### Multithreading improvements
+This latest patch includes a few improvements to multithreading, which should help with performance in some areas and allow the game to take better advantage of your CPU. 
+
+These fixes mostly benefit the server, but we've seen some reduced hitching on CPUs with fewer cores as well.
+
+### Aimspace improvements 
+We continue to work on improving the experience for the "gunner" position in vehicles.
+
+The character will now stay in a seated position while attached to the UH-1H helicopter. We modified their position to feel a little more realistic as well.
+
+We're working on some issues with this system where aiming feels slow/jittery and will hopefully have this nailed down soon.
+
+### Vulkan client fixes
+We've changed the way that the Vulkan client behaves when there are more than 3 GPUs to choose between. This should fix crashing issues that were occurring on some systems.
+
+### Loot economy changes 
+We've made some slight adjustments here and there, including fixes for backpacks and hats, which weren't spawning, and better diversity. 
+
+## What build should I use?
+The recommended build for this update is the x64 DXVK build. It is selected as the current default in the launcher. This build provides great graphical compatibility, performance, loading speeds, and is the most stable build we have available.
+
+## What's next? 
+Here are some things we're prioritizing for the next monthly update. This is not a definitive list, but it should give you a good idea of what we're working on.
+- Full vehicle persistence and ownership
+- Lockable storage and more types of storage containers
+- Lockable doors 
+- New weapons: SVAL, AN-94
+- Underwater diving 
+- Chemlights, grenades, flashbangs, and other throwable items
+- Better heat isolation and weight handling system for character 
+- Volumetric clouds for DirectX 11 
+- Additional safezones/deadzones 
+- Additional zombie types 
+
+## Full Changelog 
+Full changelog is available at    
+
+Thanks for reading and see you in Chernarus!
+
