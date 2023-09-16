@@ -2,6 +2,16 @@ import React from 'react';
 
 const BlogList = [
   {
+    title: 'Progress Report - September 2023',
+    image: require('@site/blog/progress-report-september-2023/img/poster.png').default,
+    description: (
+      <>
+        A fairly large update is landing soon and aims to fix many bugs and improve the overall quality of life.
+      </>
+    ),
+    link: "/blog/progress-report-september-2023"
+  },
+  {
     title: 'Progress Report - June 2023',
     image: require('@site/blog/progress-report-june-2023/img/poster.png').default,
     description: (
