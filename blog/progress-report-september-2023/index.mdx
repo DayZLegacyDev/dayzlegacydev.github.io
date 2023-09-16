@@ -1,8 +1,8 @@
 ---
-title: Progress Report - July 2023
-date: 2023-07-29T10:00
-description: DayZ Legacy Progress Report - July 2023
-slug: progress-report-july-2023
+title: Progress Report - September 2023
+date: 2023-09-12T10:00
+description: DayZ Legacy Progress Report - September 2023
+slug: progress-report-September-2023
 authors:
   - doctorweed
 tags: [progress-report]
@@ -21,7 +21,7 @@ Making good headway on new content additions and bug fixes/behavior reworks for 
 
 ## Release Info
 
-This month's DayZ Legacy release is `0.69.00400`.
+The new DayZ Legacy release is version `0.69.00400`.
 
 <div className="row markdownMarginBottom">
   <div className="col col--6">
@@ -47,15 +47,14 @@ Our old Bandit AI system was very limited due to being implemented entirely in S
 Now that we are performing target aiming and movement calculations in a more direct way, we have a lot more overhead to work with and can do things like:
 
 - Create "military", "civilian", and "aerial" patrols with different behaviors and gear-sets 
-- Simulate up to 40 of these patrols across the map with good performance 
+- Simulate up to 10 of these patrols across the map with good performance (more to come)
 - Dynamically spawn and despawn patrols over the server's lifetime 
-- Give bandits the ability to use vehicles 
 - Have the bandits follow static or dynamic paths (exploring towns, guarding helicrashes etc)
 - Have bandits react to player actions (shooting, driving)
 
-Right now, for this update, we've enabled a total of 40 patrols across the server's lifetime. This means they don't all spawn at once, but rather spawn and despawn over time based on counts we can set.
+Right now, for this update, we've enabled a total of 5 patrols across the server's lifetime. This means they don't all spawn at once, but rather spawn and despawn over time based on counts we can set.
 
-10 of these patrols are "military", meaning they will be heavily armed and guarding high-tier loot areas. 20 are "civilian", meaning they will have lower-tier gear and patrol around cities and small towns. 10 are "aerial", meaning they will be in the air for a fixed fly time before crashing.
+2 of these patrols are "military", meaning they will be heavily armed and guarding high-tier loot areas. 3 are "civilian", meaning they will have lower-tier gear and patrol around cities and small towns.
 
 This system is going to be prone to a BUNCH of weird behavior and bugs, so please report anything you see that looks off (movement, interaction, balance issues, etc)
 
@@ -72,8 +71,6 @@ With this update we are finally enabling world persistence for more object types
 - Character's money will now be saved properly.
 
 We're setting a default lifetime of 1 week for all saved objects. This means that if you don't interact with a tent for 1 week, it will be deleted from the database.
-
-You can have up to two tents in the world.
 
 Aside from the brand new persistence functionality, we're also pushing a series of fixes to the hive which SHOULD reduce the frequency in which characters are being randomly reset. 
 
@@ -104,11 +101,11 @@ These options will be coming soon:
 We're still going to be adding new graphical effects in the future, so this list will be expanded over time. We'll continue to organize and move things around as we see fit. 
 
 ### More damage improvements 
-We've changed the way that shock values are applied across the board and we think this gives a much better experience and challenge overall. Many damage sources were configured with very low or no shock damage assessment, which meant that players could take a lot of damage without any real impact to their character. 
+We've changed the way that shock values are applied across the board and we think this gives a much better experience and challenge overall. Many damage sources were configured with very low or no shock damage assessment, which meant that players could take a lot of damage without any real impact to their character. As part of the changes we've made, you will see a lot more shock damage being applied to your character with almost every damage source. This means that you will be more likely to pass out from taking damage, which is a good thing.
 
-As part of the changes we've made, you will see a lot more shock damage being applied to your character with almost every damage source. This means that you will be more likely to pass out from taking damage, which is a good thing. This mechanic makes zombies much more dangerous than they currently are, so be careful when engaging them in melee combat.
+This new application of shock damage also applies to vehicles, so getting into a car crash will almost surely knock the player out.  
 
-This new application of shock damage also applies to vehicles, so getting into a car crash will almost surely knock the player out.
+These changes also apply to zombies, making them much more dangerous than they were previously, so be careful when engaging them in melee combat. We've really upped the shock damage values since the hit detection is so wonky right now.
 
 Our handling of the unconscious state has been tweaked pretty significantly as well so that you will wake up much quicker than before, in most cases, under two minutes. You will wake up significantly slower if you have broken bones, are bleeding, etc, so keep this in mind. 
 
@@ -136,7 +133,7 @@ This resolves a bug that allowed networked players to get into destroyed vehicle
 We're making all of these changes now to gear up for vehicle persistence and ownership, which should be coming around in the next couple of months. 
 
 ### World and accelerated time improvements 
-Welcome to night-time Chernarus! We're testing some improvements to accelerated time and as such, we have set the default server time to dusk. 
+Welcome to night-time Chernarus! We're testing some improvements to accelerated time and as such, we have set the default server time to early dawn.
 
 We've re-enabled street lights so when you're in a town or going down a main road, you should be given at least some light to see by.
 
@@ -166,7 +163,9 @@ These fixes mostly benefit the server, but we've seen some reduced hitching on C
 We've changed the way that the Vulkan client behaves when there are more than 3 GPUs to choose between. This should fix crashing issues that were occurring on some systems.
 
 ### Loot economy changes 
-We've made some slight adjustments here and there, including fixes for backpacks and hats, which weren't spawning, and better diversity. 
+We've made some slight adjustments here and there, including improved diversity, several fixed spawn types, and a couple of new backpacks to find.
+
+Items should now also be spawning with some amount of damage which is assigned randomly. 
 
 ## What build should I use?
 The recommended build for this update is the x64 DXVK build. It is selected as the current default in the launcher. This build provides great graphical compatibility, performance, loading speeds, and is the most stable build we have available.
@@ -195,7 +194,7 @@ We'll still be releasing hotfixes and patches as needed, but the major content u
 I'm also going to be taking a short break from the project to focus on some other things in my life. In the meantime, the rest of the team continues work in other areas.
 
 ## Full Changelog 
-Full changelog is available at    
+Full changelog is available at 
 
 Thanks for reading and see you in Chernarus!
 
