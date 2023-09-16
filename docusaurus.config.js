@@ -100,40 +100,32 @@ const config = {
         },
         items: [
           { to: 'blog', label: 'Blog', position: 'left' },
+          {
+            type: "doc",
+            docId: "intro",
+            position: "left",
+            label: "Documentation",
+          },
+          // { to: "/docs/faq", label: "FAQ", position: "left" },
           // {
-          //   to: '/progress/milestones', label: 'Progress', position: 'left',
+          //   label: "Galleries",
+          //   position: "left",
           //   items: [
           //     {
-          //       label: 'Major Milestones',
-          //       to: '/progress/milestones',
-          //     }
-          //   ]
-          // },
-          // {
-          //   type: 'doc',
-          //   docId: 'intro',
-          //   position: 'left',
-          //   label: 'Documentation',
-          // },
-          // { to: '/docs/faq', label: 'FAQ', position: 'left' },
-          // {
-          //   label: 'Galleries', position: 'left',
-          //   items: [
-          //     {
-          //       label: 'Gameplay Videos',
-          //       to: '/gallery/videos',
+          //       label: "Jak and Daxter: The Precursor Legacy",
+          //       to: "/gallery/jak1",
           //     },
           //     {
-          //       label: 'Images',
-          //       to: '/gallery/images',
-          //     }
-          //   ]
+          //       label: "Jak II",
+          //       to: "/gallery/jak2",
+          //     },
+          //   ],
           // },
           {
-            href: 'https://github.com/dayzlegacydev',
-            position: 'right',
-            className: 'header-github-link',
-            'aria-label': 'GitHub repository',
+            href: "https://github.com/dayzlegacydev",
+            position: "right",
+            className: "header-github-link",
+            "aria-label": "GitHub repository",
           },
         ],
       },
