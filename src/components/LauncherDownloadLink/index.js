@@ -32,11 +32,13 @@ export default function LauncherDownloadLink() {
   }, []);
 
   function DownloadContent() {
-    if (loading) {
+    
+    /* used when update is being prepared and we don't want users getting the launcher */ 
+    if (true) {
       return (
         <div className="text">
-          <h3 className="title">Download</h3>
-          <p className="description">Fetching latest release...</p>
+          <h3 className="title">Preparing next update...</h3>
+          <p className="description">Launcher is currently unavailable while we work on deploying a new update.</p>
         </div>
       );
     }
