@@ -135,7 +135,7 @@ const config = {
         Copyright © ${new Date().getFullYear()} DayZ Legacy Team. Built with Docusaurus.
         <br>
         <br>
-        <span class="trademark-disclaimer">All third party trademarks (including but not limited to: logos and icons) referenced by DayZ Legacy remain the property of their respective owners. Unless specifically identified as such, DayZ Legacy's use of third party trademarks does not indicate any relationship, sponsorship, or endorsment between DayZ Legacy and the owners of these trademarks.  Any references to the aforementioned trademarks is for non-commercial, informative purposes and should be considered nominative fair use.</span>`,
+        <span class="trademark-disclaimer">DayZ® is a registered trademark of Bohemia Interactive a.s. All third party trademarks (including but not limited to: logos and icons) referenced by DayZ Legacy remain the property of their respective owners. Unless specifically identified as such, DayZ Legacy's use of third party trademarks does not indicate any relationship, sponsorship, or endorsment between DayZ Legacy and the owners of these trademarks.  Any references to the aforementioned trademarks is for informative purposes and should be considered nominative fair use.</span>`,
       },
       prism: {
         theme: darkCodeTheme,
