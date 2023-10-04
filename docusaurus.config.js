@@ -69,7 +69,7 @@ const config = {
     ({
       announcementBar: {
         id: 'announcementBar', // Increment on change
-        content: 'Monthly status report is now available <a href="https://dayzlegacy.dev/blog/progress-report-june-2023/">here.</a>',
+        content: 'Monthly status report is now available <a href="https://dayzlegacy.dev/blog/progress-report-september-2023/">here.</a>',
       },
       algolia: {
         // The application ID provided by Algolia
