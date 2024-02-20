@@ -78,9 +78,9 @@ export default function Home() {
             <div className="row center">
               <div className="col col--4">
                 <h2 className="monospaced">About the Project</h2>
-                <p>DayZ Legacy is a modded version of pre-alpha DayZ Standalone that aims to add new content while retaining the classic look and feel.</p>
+                <p>DayZ Legacy is a modded version of alpha DayZ Standalone that aims to add new content while retaining the classic look and feel.</p>
                 <p>The project started in 2021 and is a collaborative project between a few people.</p>
-                <p>DayZ Legacy is free to play (if you own the game on Steam)</p>
+                <p>DayZ Legacy requires you to own the game on Steam to play.</p>
                 <p>At a high level, our strategy is as follows:</p>
                 <ul>
                   <li>re-create a variety of features from the current version of DayZ</li>
@@ -96,7 +96,6 @@ export default function Home() {
           </div>
         </section>
         <section className="home-section alternate-bg-color">
-        <HomepageFeatures />
           <div className="container">
             <div className="row center">
               <div className="col col--6">
