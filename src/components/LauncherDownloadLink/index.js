@@ -34,7 +34,7 @@ export default function LauncherDownloadLink() {
   function DownloadContent() {
     
     /* used when update is being prepared and we don't want users getting the launcher */ 
-    if (false) {
+    if (true) {
       return (
         <div className="text">
           <h3 className="title">Preparing next update...</h3>

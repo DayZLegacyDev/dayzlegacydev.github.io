@@ -3,7 +3,6 @@ import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import LatestBlogs from '@site/src/components/LatestBlogs';
 import LauncherDownloadLink from '@site/src/components/LauncherDownloadLink';
 
 function HomepageHeader() {
@@ -74,19 +73,18 @@ export default function Home() {
       description="The DayZ Legacy Project">
       <HomepageHeader />
       <main className="sl-theme-dark">
-        <LatestBlogs/>
-        <HomepageFeatures />
         <section className="home-section">
           <div className="container">
             <div className="row center">
               <div className="col col--4">
                 <h2 className="monospaced">About the Project</h2>
-                <p>The project officially started back in 2021 and has continued to grow in scale and complexity.</p>
+                <p>DayZ Legacy is a modded version of pre-alpha DayZ Standalone that aims to add new content while retaining the classic look and feel.</p>
+                <p>The project started in 2021 and is a collaborative project between a few people.</p>
+                <p>DayZ Legacy is free to play (if you own the game on Steam)</p>
                 <p>At a high level, our strategy is as follows:</p>
                 <ul>
                   <li>re-create a variety of features from the current version of DayZ</li>
-                  <li>fix several critical issues and vulnerabilities in the game through Helix, our custom anti-cheat solution</li>
-                  <li>develop new tools and workflows for creating, packing, and implementing gameplay data</li>
+                  <li>fix several critical issues and vulnerabilities through our custom anti-cheat</li>
                   <li>remove bloat and optimize client and server performance</li>
                   <li>retain legacy (pre-alpha) engine functionality and visuals</li>
                 </ul>
@@ -98,6 +96,7 @@ export default function Home() {
           </div>
         </section>
         <section className="home-section alternate-bg-color">
+        <HomepageFeatures />
           <div className="container">
             <div className="row center">
               <div className="col col--6">

@@ -3,7 +3,6 @@ import clsx from 'clsx';
 import styles from './styles.module.css';
 import { useState, useEffect, useRef } from 'react';
 import Layout from '@theme/Layout';
-import LatestBlogs from '@site/src/components/LatestBlogs';
 import LauncherDownloadLink from '@site/src/components/LauncherDownloadLink';
 
 const FeatureList = [

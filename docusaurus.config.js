@@ -51,13 +51,7 @@ const config = {
           editUrl:
             'https://github.com/dayzlegacydev/dayzlegacydev.github.io/tree/master/'
         },
-        blog: {
-          path: 'blog',
-          blogSidebarCount: 0,
-          showReadingTime: true,
-          editUrl:
-            'https://github.com/dayzlegacydev/dayzlegacydev.github.io/tree/master/',
-        },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -67,10 +61,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      announcementBar: {
-        id: 'announcementBar', // Increment on change
-        content: 'Monthly status report is now available <a href="https://dayzlegacy.dev/blog/progress-report-september-2023/">here.</a>',
-      },
       algolia: {
         // The application ID provided by Algolia
         appId: 'YAP33BKRCA',
@@ -99,7 +89,6 @@ const config = {
           src: 'img/logo.png',
         },
         items: [
-          { to: 'blog', label: 'Blog', position: 'left' },
           {
             type: "doc",
             docId: "intro",
