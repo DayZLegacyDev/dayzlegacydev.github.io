@@ -89,12 +89,12 @@ const config = {
           src: 'img/logo.png',
         },
         items: [
-          {
-            type: "doc",
-            docId: "intro",
-            position: "left",
-            label: "Documentation",
-          },
+          // {
+          //   type: "doc",
+          //   docId: "intro",
+          //   position: "left",
+          //   label: "Documentation",
+          // },
           // { to: "/docs/faq", label: "FAQ", position: "left" },
           // {
           //   label: "Galleries",
